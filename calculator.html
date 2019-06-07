@@ -13,6 +13,10 @@ function seno() {
 var num = document.getElementById("n1");
 num.value = Math.sin((num.value/180)*Math.PI);
 }
+function square() {
+  var num = document.getElementById("n1");
+  num.value = num.value * num.value;
+}
 </script>
 </head>
 <body>
@@ -27,6 +31,9 @@ Number:
 </p>
 <p>
 <button onclick="seno()">sin(x) </button>
+</p>
+<p>
+<button onclick="square()"> x^2 </button>
 </p>
 </body>
 </html>
